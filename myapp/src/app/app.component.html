@@ -1,0 +1,74 @@
+<body>
+
+{{title}}
+<hr>
+<!-- <img [src]="pic" >
+<table class="table table-bordered">
+<tr>
+  <td>sn</td><td [attr.colspan]="col">Name</td>
+</tr>
+<tr>
+  <td>
+    <ul class="list-group">
+      <!-- class binding example -->
+      <!-- <li class="list-group-item" [class.active]="isActive">Link 1</li>
+      <li class="list-group-item">Link 2</li>
+      <li class="list-group-item">Link 3</li>
+     -->
+    <!-- </ul>
+  </td>
+</tr>
+</table>
+<input type="text" class="form-control" (keyup.enter)="test($event);" >
+{{invalue}}
+<input [(ngModel)]="email" type="text" class="form-control">
+{{email | uppercase}}
+<button class="btn btn-primary" >Fetch</button> -->
+
+<!-- <ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  
+</ul> -->
+
+
+<!-- <div class="input-group flex-nowrap">
+  <span class="input-group-text" id="addon-wrapping">Enter Your Hobbies</span>
+  <input  #hobby type="text" (keyup.enter)="addHobby(hobby.value)" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<h3>Your List of Hobbies </h3>--->
+
+
+  <!-- <table class="center table table-striped" *ngFor="let x of hobbies">
+    <tr>
+      <td>{{cnt}}</td>
+      <td>{{x | uppercase}}</td>
+      <td><button type="button" class="btn btn-danger">Delete</button></td>
+      
+    </tr>
+  </table>
+  <div *ngIf="(!isTrue)" >
+  <app-login></app-login>
+</div> --> 
+
+
+<a href="#" (click)="updatelink('hobby')">Hobby</a> &nbsp;&nbsp; <a href="#" (click)="updatelink('addhobby')">Add Hobby</a>&nbsp;&nbsp;<a href="#" (click)="updatelink('Fav')">Fav</a>&nbsp;&nbsp;<a href="#" (click)="updatelink('num')">IND to US Number Conversion</a>
+
+<app-home ></app-home>
+<app-home
+ [msg]="link"  
+ [hobarr]="hobbies" 
+ (newhobby)="addHobby($event)" 
+ (deletehobby1)="deleteHobby($event)"
+ (addfav)="addtofav($event)"
+[myfav]="favhobby"
+(deletefav1)="deleteFav($event)"
+(adddes1)="adddes($event)"
+[desarr] = "description"
+[number1]="number"
+(addnumber1)="addnumber"
+
+ >
+</app-home>
+</body>

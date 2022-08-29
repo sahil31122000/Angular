@@ -1,0 +1,28 @@
+<div *ngIf="msg == 'hobby'">
+<app-hobby 
+[hobarr1]="hobarr" 
+(deletehobby3)="deletehobby2($event)" 
+(addf)="addtofav($event)"
+[desarr1]="desarr">
+</app-hobby>
+</div>
+
+<div *ngIf="msg == 'addhobby'">
+    <app-addhobby 
+    (mynewhobby)="addnewhobby($event)"
+    (adddes3)="adddes2($event)"
+    >
+</app-addhobby>
+</div>
+
+<div *ngIf="msg == 'Fav'">
+    <app-fav [myfav1]="myfav" (deletefav3)="deletefav2($event)"></app-fav>
+</div>
+    <div *ngIf="msg == 'num'">
+       <app-numberpipe
+       [number2]="number1"
+       (addnumber3)="addnumber2($event)">
+
+       </app-numberpipe>
+    
+

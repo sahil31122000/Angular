@@ -1,0 +1,14 @@
+<p>hobby works!</p>
+
+<table class="center table table-striped" *ngFor="let x of hobarr1;let i = index;">
+  <div>
+    <tr>
+      <!-- <td></td> -->
+      <td id="del">{{x.name }}</td>
+      <td><button type="button" class="btn btn-danger" (click)="delete(i)">Delete</button></td>
+      <td><button type="button" class="btn btn-danger" (click)="afav(i)">Favourite</button></td>
+      <td id="des">{{desarr1[i] | mypipes}}</td>
+
+    </tr>
+  </div>
+  </table>

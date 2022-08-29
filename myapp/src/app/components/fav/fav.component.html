@@ -1,0 +1,11 @@
+<p>fav works!</p>
+
+<table class="center table table-striped" *ngFor="let x of myfav1;let i = index">
+    <div>
+    <tr>
+      <td></td>
+      <td>{{x.name | uppercase}}</td>
+      <td><button type="button" class="btn btn-danger" (click)="delete(i)">Delete</button></td>
+
+    </tr>
+  </div>

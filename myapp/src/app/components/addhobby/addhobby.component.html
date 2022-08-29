@@ -1,0 +1,5 @@
+<h4>Add your hobbies here, it will be appended in "Hobby tab"</h4>
+<label for="newhobby" >New Hobby</label>
+<input appMydirDirective #hobby type="text" id = "newhobby" class="form-control" (keyup.enter)="addhobby(hobby.value)">
+<label for="newhobby" >Hobby Description</label>
+<input #des type="text" id = "description" class="form-control" (keyup.enter)="adddescription(des.value)">

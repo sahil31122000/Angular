@@ -1,0 +1,5 @@
+<label  >Indian Number</label>
+<!-- <input [(ngModel)]="number" type="text"  class="form-control" >
+<h3>{{number | number}}</h3> -->
+<input  #num type="text"  class="form-control" (keyup.enter)="test(num.value);">
+<h3 appMydirDirective>{{number | number}}</h3>
